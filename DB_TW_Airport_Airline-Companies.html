@@ -103,6 +103,9 @@ input[type=text]:focus{border-color:var(--primary)}
 .chart-wrap{position:relative;height:520px}
 .chart-wrap.md{height:340px}
 .chart-wrap.pie{max-width:400px;margin:0 auto}
+@media(max-width:900px){
+  .chart-wrap.md:not(.pie){height:510px}
+}
 .bar-scroll{max-height:300px;overflow-y:auto;overflow-x:hidden}
 .bar-scroll-inner{position:relative;height:760px}
 .trend-flex{display:flex;gap:20px}
@@ -236,7 +239,7 @@ footer{text-align:center;color:var(--text-3);font-size:12px;padding:20px 0 4px;b
     <div class="card-title">歷年航空公司載客人數</div>
     <div class="trend-flex">
       <div class="trend-picker" id="trend-picker"></div>
-      <div class="chart-wrap md" style="flex:1"><canvas id="chart-trend"></canvas></div>
+      <div class="chart-wrap md" style="flex:1 1 auto"><canvas id="chart-trend"></canvas></div>
     </div>
   </div>
 
@@ -302,7 +305,7 @@ footer{text-align:center;color:var(--text-3);font-size:12px;padding:20px 0 4px;b
     <select id="ap-trend-pax-select-mobile" class="mobile-select" multiple></select>
     <div class="trend-flex">
       <div class="trend-picker" id="ap-trend-pax-picker"></div>
-      <div class="chart-wrap md" style="flex:1"><canvas id="ap-chart-trend-pax"></canvas></div>
+      <div class="chart-wrap md" style="flex:1 1 auto"><canvas id="ap-chart-trend-pax"></canvas></div>
     </div>
   </div>
 
@@ -311,7 +314,7 @@ footer{text-align:center;color:var(--text-3);font-size:12px;padding:20px 0 4px;b
     <select id="ap-trend-routes-select-mobile" class="mobile-select" multiple></select>
     <div class="trend-flex">
       <div class="trend-picker" id="ap-trend-routes-picker"></div>
-      <div class="chart-wrap md" style="flex:1"><canvas id="ap-chart-trend-routes"></canvas></div>
+      <div class="chart-wrap md" style="flex:1 1 auto"><canvas id="ap-chart-trend-routes"></canvas></div>
     </div>
   </div>
 
@@ -322,7 +325,7 @@ footer{text-align:center;color:var(--text-3);font-size:12px;padding:20px 0 4px;b
         <label for="ap-dest-sel">選擇航點：</label>
         <select id="ap-dest-sel"></select>
       </div>
-      <div class="chart-wrap md" style="flex:1"><canvas id="ap-chart-dest-stack"></canvas></div>
+      <div class="chart-wrap md" style="flex:1 1 auto"><canvas id="ap-chart-dest-stack"></canvas></div>
     </div>
   </div>
 
@@ -389,7 +392,7 @@ footer{text-align:center;color:var(--text-3);font-size:12px;padding:20px 0 4px;b
       <select id="lk-al-trend-select-mobile" class="mobile-select" multiple></select>
       <div class="trend-flex">
         <div class="trend-picker" id="lk-al-trend-picker"></div>
-        <div class="chart-wrap md" style="flex:1"><canvas id="lk-al-chart-trend"></canvas></div>
+        <div class="chart-wrap md" style="flex:1 1 auto"><canvas id="lk-al-chart-trend"></canvas></div>
       </div>
     </div>
 
@@ -526,7 +529,7 @@ footer{text-align:center;color:var(--text-3);font-size:12px;padding:20px 0 4px;b
       <select id="nal-trend-select-mobile" class="mobile-select" multiple></select>
       <div class="trend-flex">
         <div class="trend-picker" id="nal-trend-picker"></div>
-        <div class="chart-wrap md" style="flex:1"><canvas id="nal-chart-trend"></canvas></div>
+        <div class="chart-wrap md" style="flex:1 1 auto"><canvas id="nal-chart-trend"></canvas></div>
       </div>
     </div>
 
